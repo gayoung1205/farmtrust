@@ -27,7 +27,7 @@ export default function Layout() {
             &#128269;
           </button>
         </form>
-        <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
+        <div style={{ display: 'flex', gap: 20, alignItems: 'center' }}>
           <span style={{ fontSize: 12, color: '#666', cursor: 'pointer' }}>로그인</span>
           <span style={{ fontSize: 12, color: '#666', cursor: 'pointer' }}>회원가입</span>
           <span style={{ fontSize: 12, color: '#666', cursor: 'pointer' }}>마이페이지</span>
@@ -37,12 +37,12 @@ export default function Layout() {
       </div>
 
       {/* 카테고리 탭 */}
-      <div style={{ background: '#fff', borderBottom: '1px solid #e0e0e0', padding: '0 40px', display: 'flex' }}>
+      <div style={{ background: '#fff', borderBottom: '1px solid #e0e0e0', padding: '0 40px', display: 'flex', justifyContent: 'center' }}>
         {['전체', '채소', '과일', '쌀·잡곡', '나물·버섯', '양념', '농가 보기', '입점 신청'].map((item, i) => (
           <Link
             key={item}
             to={item === '입점 신청' ? '/apply' : item === '농가 보기' ? '/?tab=farms' : `/?category=${item === '전체' ? '' : item}`}
-            style={{ fontSize: 12, color: '#555', padding: '10px 14px', whiteSpace: 'nowrap', borderBottom: '2px solid transparent', display: 'block' }}
+            style={{ fontSize: 12, color: '#555', padding: '10px 70px', whiteSpace: 'nowrap', borderBottom: '2px solid transparent', display: 'block' }}
             onMouseEnter={e => e.target.style.color = '#27500A'}
             onMouseLeave={e => e.target.style.color = '#555'}
           >

@@ -27,7 +27,7 @@ export default function FarmApply() {
   )
 
   return (
-    <div style={{ padding: '32px 40px', maxWidth: 480 }}>
+    <div style={{ padding: '32px 40px', maxWidth: 480, margin: '0 auto' }}>
       <div style={{ fontSize: 16, fontWeight: 500, marginBottom: 4 }}>농가 입점 신청</div>
       <div style={{ fontSize: 12, color: '#888', marginBottom: 24 }}>친환경 인증서 보유 농가에 한해 온라인 신청만으로 입점 가능합니다.</div>
 
