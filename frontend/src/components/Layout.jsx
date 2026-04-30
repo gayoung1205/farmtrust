@@ -1,6 +1,7 @@
 import { Outlet, Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import { getProducts } from '../api'
+import Footer from './Footer'
 
 export default function Layout() {
   const [search, setSearch] = useState('')
@@ -31,6 +32,7 @@ export default function Layout() {
           <span style={{ fontSize: 12, color: '#666', cursor: 'pointer' }}>로그인</span>
           <span style={{ fontSize: 12, color: '#666', cursor: 'pointer' }}>회원가입</span>
           <span style={{ fontSize: 12, color: '#666', cursor: 'pointer' }}>마이페이지</span>
+          <Link to="/inquiry" style={{fontSize: 12, color: '#666'}}>문의하기</Link>
           <Link to="/admin" style={{ fontSize: 12, color: '#666' }}>관리자</Link>
           <button style={{ fontSize: 12, fontWeight: 500, color: '#27500A', border: '1px solid #3B6D11', padding: '5px 12px', background: 'none' }}>장바구니 0</button>
         </div>
@@ -52,6 +54,7 @@ export default function Layout() {
       </div>
 
       <Outlet />
+      <Footer />
     </div>
   )
 }
