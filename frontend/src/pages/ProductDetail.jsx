@@ -172,9 +172,12 @@ export default function ProductDetail() {
       {/* 카메라 */}
       <div style={{ background: '#fff', border: '1px solid #e8e8e8', padding: 20 }}>
         <div style={{ fontSize: 13, fontWeight: 500, marginBottom: 14, paddingBottom: 10, borderBottom: '1px solid #f0f0f0' }}>실시간 밭 현황</div>
-        <div style={{ background: '#f5f5f0', border: '1px solid #e8e8e8', padding: 40, textAlign: 'center' }}>
-          <div style={{ fontSize: 13, color: '#aaa', marginBottom: 4 }}>📷 실시간 카메라</div>
-          <div style={{ fontSize: 11, color: '#ccc' }}>개발 중입니다</div>
+        <div style={{ width: '100%', height: 240, overflow: 'hidden', border: '1px solid #e8e8e8' }}>
+          <img
+            src="/images/farm-camera.jpg"
+            alt="밭 현황"
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
         </div>
       </div>
 

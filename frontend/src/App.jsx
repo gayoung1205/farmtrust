@@ -6,6 +6,7 @@ import FarmDetail from './pages/FarmDetail'
 import FarmApply from './pages/FarmApply'
 import Admin from './pages/Admin'
 import Inquiry from './pages/Inquiry'
+import Login from './pages/Login'
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="apply" element={<FarmApply />} />
         <Route path="admin" element={<Admin />} />
         <Route path="inquiry" element={<Inquiry />}></Route>
+        <Route path="login" element={<Login />}></Route>
       </Route>
     </Routes>
   )

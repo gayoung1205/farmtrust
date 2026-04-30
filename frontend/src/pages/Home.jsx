@@ -62,8 +62,12 @@ export default function Home() {
                   <div style={{ fontSize: 10, color: '#888' }}>{farm.location} · {farm.certification}</div>
                 </div>
               </div>
-              <div style={{ background: '#f5f5f0', border: '1px solid #e8e8e8', padding: '10px', textAlign: 'center', fontSize: 11, color: '#aaa', marginBottom: 8 }}>
-                실시간 카메라 — 개발 중
+              <div style={{ width: '100%', height: 80, overflow: 'hidden', border: '1px solid #e8e8e8', marginBottom: 8 }}>
+                <img
+                  src="/images/farm-camera.jpg"
+                  alt="밭 현황"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
               </div>
               <div style={{ display: 'flex', gap: 0 }}>
                 {farm.sensors?.map(s => (

@@ -29,7 +29,7 @@ export default function Layout() {
           </button>
         </form>
         <div style={{ display: 'flex', gap: 20, alignItems: 'center' }}>
-          <span style={{ fontSize: 12, color: '#666', cursor: 'pointer' }}>로그인</span>
+          <Link to="/login" style={{ fontSize: 12, color: '#666' }}>로그인</Link>
           <span style={{ fontSize: 12, color: '#666', cursor: 'pointer' }}>회원가입</span>
           <span style={{ fontSize: 12, color: '#666', cursor: 'pointer' }}>마이페이지</span>
           <Link to="/inquiry" style={{fontSize: 12, color: '#666'}}>문의하기</Link>
